@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midnight to Six</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="getBerlinDate()">
+    <div class="background">
+      <div class="fullpage">
+    <div class="header-bg">
+      <div class="navbar">
+        <a href="#about">Über uns</a>
+        <a href="#music">Musik</a>
+        <a href="#photos">Fotos</a>
+        <a href="#videos">Videos</a>
+        <a href="#events">Events</a>
+        <a href="#infos">Infos für Veranstalter</a>
+        <a href="#contact">Kontakt & Impressum</a>
+        <a href="#socials">Social Media</a>
+      </div>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#about" onclick="closeNav()">Über uns</a>
+        <a href="#music" onclick="closeNav()">Musik</a>
+        <a href="#photos" onclick="closeNav()">Fotos</a>
+        <a href="#videos" onclick="closeNav()">Videos</a>
+        <a href="#events" onclick="closeNav()">Events</a>
+        <a href="#infos" onclick="closeNav()">Infos für Veranstalter</a>
+        <a href="#contact" onclick="closeNav()">Kontakt & Impressum</a>
+        <a href="#socials" onclick="closeNav()">Social Media</a>
+      </div>
+
+      <button class="openbtn" onclick="openNav()">&#9776; Men&uuml;</button>
+
+      <div class="header" id="home">
+        <h1>Midnight to Six</h1>
+        <p>Die außergewöhnliche Party- und Rockband aus Magdeburg</p>
+        <hr id="about">
+      </div>
+
+      <div class="section" id="about">
+        <h2>Über uns</h2>
+        <p>
+          Seit 2019 hat sich „Midnight to Six“ durch ihre Auftritte den Ruf
+          erworben, eine der außergewöhnlichsten Party- und Rockbands aus der
+          Region zu sein.
+          <br />
+          Unser Herz schlägt nicht nur für die unvergänglichen Songperlen
+          vergangener Dekaden, sondern auch für - oft zu Unrecht - weniger bekannte
+          Qualitätssongs.
+          <br />
+          Dies alles wird mit der außergewöhnlichen Power-Stimme unserer
+          Sängerin „Vicky“ und ihrer energiegeladenen Bühnenpräsenz von der Band
+          auf einen Level dargeboten, der jedes Konzert zu einer Party macht.
+          <br />
+          Ob auf Stadtfesten, in Musikclubs, auf Festivals und auch
+          Privatpartys, stets haben wir ein sehr positiv gestimmtes Publikum
+          zurückgelassen.
+          <br />
+          „Midnight to Six“ freut sich jetzt schon, Euch auf einem unserer
+          nächsten Konzerte begrüßen zu können.
+        </p>
+        <hr id="music">
+      </div>
+
+      <div class="section" id="music">
+        <h2>Musik</h2>
+        <p>
+          Sie wollen wissen, wie wir uns anhören? Hier können Sie in 2 unserer
+          Lieder reinhören.
+        </p>
+        <div class="audio-player">
+          <h3>Don't You</h3>
+          <audio controls class="audio-element">
+            <source
+              src="songs/Don't You - Midnight To Six.mp3"
+              type="audio/mpeg"
+            />
+            Ihr Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <div class="audio-player">
+          <h3>Summerwine</h3>
+          <audio controls class="audio-element">
+            <source
+              src="/songs/Summerwine - Midnight To Six.mp3"
+              type="audio/mpeg"
+            />
+            Ihr Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <hr id="photos">
+      </div>
+
+      <div class="section" id="photos">
+        <h2>Fotos</h2>
+        <p>Einblicke in unsere Auftritte.</p>
+        <div class="photo-container" id="photoContainer">
+          <img src="images/images_image1.jpg" alt="Foto 1" />
+          <img src="images/images_image2.jpg" alt="Foto 2" />
+          <img src="images/images_image3.jpg" alt="Foto 3" />
+          <img src="images/images_image4.jpg" alt="Foto 4" />
+          <img src="images/images_image5.jpg" alt="Foto 5" />
+          <img src="images/images_image6.jpg" alt="Foto 6" />
+          <img src="images/images_image7.jpg" alt="Foto 7" />
+          <img src="images/images_image8.jpg" alt="Foto 8" />
+          <img src="images/images_image9.jpg" alt="Foto 9" />
+          <img src="images/images_image10.jpg" alt="Foto 10" />
+          <img src="images/images_image11.jpg" alt="Foto 11" />
+          <img src="images/images_image12.jpg" alt="Foto 12" />
+        </div>
+        <hr id="videos">
+      </div>
+
+      <div class="section" id="videos">
+        <h2>Videos</h2>
+        <p>Sehen Sie unsere neuesten Videos und Livemitschnitte.</p>
+        <div class="video-container large">
+          <video width="640" height="360" controls>
+            <source
+              src="videos/Don't You - Magdeburger Stadtfest 2024.mp4"
+              type="video/mp4"
+              allowfullscreen
+            />
+            Dein Browser unterstützt dieses Video nicht.
+          </video>
+        </div>
+        <hr id="events">
+      </div>
+
+      <div class="section" id="events">
+        <h2>Events</h2>
+        <p>Erfahren Sie, wann und wo unsere nächsten Auftritte stattfinden.</p>
+        <div class="date-container" id="dateContainer">
+          <!-- Das aktuelle Datum wird hier angezeigt -->
+        </div>
+      
+        <div class="events-container event-section" id="eventsContainer">
+          <!-- Event-Liste -->
+          <div class="event" data-date="2019-11-23">23.11.2019 – Rock Nacht – Magdeburg</div>
+          <div class="event" data-date="2020-07-11">11.07.2020 – Freiraumlabor – Magdeburg</div>
+          <div class="event" data-date="2020-09-12">12.09.2020 – Gröninger Bad – Magdeburg</div>
+          <div class="event" data-date="2021-08-27">27.08.2021 – "Rentnerparty" – Magdeburg</div>
+          <div class="event" data-date="2021-09-03">03.09.2021 – Polterabend – Niemberg</div>
+          <div class="event" data-date="2021-09-04">04.09.2021 – KC22 Open Air – Braunschweig</div>
+          <div class="event" data-date="2022-03-20">20.03.2022 – Expertise – Braunschweig</div>
+          <div class="event" data-date="2022-04-30">30.04.2022 – "Tanz in den Mai" – Hillersleben</div>
+          <div class="event" data-date="2022-09-03">03.09.2022 – Frontera Treffen – Fischbeck bei Hameln</div>
+          <div class="event" data-date="2022-09-10">10.09.2022 – Spatzenfalle – Schönebeck</div>
+          <div class="event" data-date="2022-09-24">24.09.2022 – "Rockabend" beim TUS Magdeburg – Magdeburg</div>
+          <div class="event" data-date="2022-11-26">26.11.2022 – Schabreu – Braunschweig</div>
+          <div class="event" data-date="2023-01-28">28.01.2023 – Spatzenfalle – Schönebeck</div>
+          <div class="event" data-date="2023-08-26">26.08.2023 – Privatveranstaltung</div>
+          <div class="event" data-date="2023-11-04">04.11.2023 – Spatzenfalle – Schönebeck</div>
+          <div class="event" data-date="2023-11-11">11.11.2023 – Schabreu – Braunschweig</div>
+          <div class="event" data-date="2023-11-18">18.11.2023 – Lions Pub – Magdeburg</div>
+          <div class="event" data-date="2024-05-04">04.05.2024 – Privatveranstaltung</div>
+          <div class="event" data-date="2024-05-05">05.05.2024 – Frühlings Happening – Bad Lauterberg</div>
+          <div class="event" data-date="2024-05-17">17.05.2024 – Stadtfest Magdeburg – Alter Markt – Hauptbühne</div>
+          <div class="event" data-date="2024-08-03">03.08.2024 – Riverside Night – Yachtfahren Magdeburg</div>
+          <div class="event" data-date="2024-08-10">10.08.2024 – Privatveranstaltung</div>
+          <div class="event" data-date="2024-08-15">15.08.2024 – Feuerwache Magdeburg – Jubiläum "30 Jahre Sozialer Dienst der Justiz"</div>
+        </div>
+        <br><b>Legende: 🟦= Vorbei  🟩= Heute ⬜= Kommend</b><br><hr id="infos">
+      
+        <div class="section" id="infos">
+          <div class="container">
+            <h2>Infos für Veranstalter</h2>
+            <div class="info-grid">
+                <a href="pdfs/Presseinfos.pdf" target="_blank" class="info-item">
+                    <img src="/icons/PDF_icon.png" alt="PDF Icon">
+                    <p>Presse Info<br>Download</p>
+                </a>
+                <a href="images/Pressefoto 01.jpg" download  class="info-item">
+                    <img src="/icons/download_icon.png" alt="Eye Icon">
+                    <p>Pressefoto 01<br>Download</p>
+                </a>
+                <a href="images/Pressefoto 02.jpg" download  class="info-item">
+                    <img src="/icons/download_icon.png" alt="Eye Icon">
+                    <p>Pressefoto 02<br>Download</p>
+                </a>
+                <a href="images/Pressefoto 03.jpg" download  class="info-item">
+                    <img src="/icons/download_icon.png" alt="Eye Icon">
+                    <p>Pressefoto 03<br>Download</p>
+                </a>
+                <a href="pdfs/Stageplan.pdf" target="_blank" class="info-item">
+                    <img src="/icons/PDF_icon.png" alt="PDF Icon">
+                    <p>Stageplan<br>Download</p>
+                </a>
+            </div>
+        </div>
+        <hr id="contact">
+        </div>
+
+      <div class="section" id="contact">
+        <h2>Kontakt & Impressum</h2>
+        <p>Kontaktieren Sie uns für Buchungen und weitere Informationen.</p><br>
+        <div class="impressum-text">
+        <h2>Kontakt:</h2>
+        <p>Till Ausmeier</p>
+        <p>Büchnerstr. 15</p>
+        <p>39114 Magdeburg</p>
+        <p>0151 54 78 38 47</p>
+        <a href="mailto:info@midnight-to-six.de" target="_blank" onclick="OpenMailClient(event, 'info@midnight-to-six.de')">info@midnight-to-six.de</a>
+      </div>
+        <br>
+        <h2>Impressum:</h2>
+        <div class="impressum">
+          <a href="/images/impressum.jpg" target="_blank">
+          <img src="/images/impressum.jpg" alt="Impressum">
+        </a>
+      </div>
+      <hr id="socials">
+      </div>
+
+      <div class="section" id="socials">
+        <h2>Social Media</h2>
+        <p>Hier finden Sie uns im Internet.</p>
+        <div class="button-container">
+          <a href="https://www.facebook.com/M2SIX/" target="_blank">Facebook</a>
+          <a
+            href="https://soundcloud.com/midnight-to-six"
+            target="_blank"
+            class="soundcloud"
+            >SoundCloud</a
+          >
+        </div>
+        <hr class="footer-hr">
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 Midnight to Six. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>
